@@ -1,1 +1,1 @@
-TEMPLATE TO MAKE PROJECT FASTER
+This's my website built with Vite & Material UI
