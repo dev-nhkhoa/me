@@ -55,7 +55,7 @@ export const INFO = {
       name: 'Minimalistic Web CV',
       desc: 'My CV in the web',
       tool: ['Javascript', 'Figma', 'React', 'Material UI'],
-      link: 'a'
+      link: 'https://github.com/dev-nhkhoa/me'
     }
   ],
   socials: [
