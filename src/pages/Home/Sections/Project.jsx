@@ -58,6 +58,7 @@ const ProjectCard = (props) => {
       }}
       onClick={() => {
         // Liên kết link
+        window.open(link)
       }}
     >
       <Box

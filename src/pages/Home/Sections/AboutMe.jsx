@@ -1,8 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { INFO } from '~/lib/info'
-import FacebookIcon from '@mui/icons-material/Facebook'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import InstagramIcon from '@mui/icons-material/Instagram'
+import Avatar from '~/assets/images/avatar.jpg'
 
 const AboutMe = () => {
   return (
@@ -66,9 +64,17 @@ const AboutMe = () => {
                   pt: '6px'
                 }}
               >
-                <FacebookIcon />
-                <GitHubIcon />
-                <InstagramIcon />
+                {INFO.socials.map((s, i) => {
+                  return (
+                    <Box
+                      sx={{ cursor: 'pointer' }}
+                      key={i}
+                      onClick={() => window.open(s.link)}
+                    >
+                      {s.element}
+                    </Box>
+                  )
+                })}
               </Box>
             </Box>
             <Box
@@ -79,7 +85,17 @@ const AboutMe = () => {
                 borderRadius: '99999px',
                 border: '1px solid #000'
               }}
-            ></Box>
+            >
+              <img
+                src={Avatar}
+                style={{
+                  objectFit: 'fill',
+                  width: '60px',
+                  height: '60px',
+                  borderRadius: '99999px'
+                }}
+              />
+            </Box>
           </Box>
         </Box>
       </Box>

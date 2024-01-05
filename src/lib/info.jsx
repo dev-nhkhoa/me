@@ -1,3 +1,7 @@
+import FacebookIcon from '@mui/icons-material/Facebook'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import InstagramIcon from '@mui/icons-material/Instagram'
+
 export const INFO = {
   quote: '“Keep learning every day! Be better than you yesterday.”',
   fullName: 'TRUONG NGUYEN ANH KHOA',
@@ -53,5 +57,10 @@ export const INFO = {
       tool: ['Javascript', 'Figma', 'React', 'Material UI'],
       link: 'a'
     }
+  ],
+  socials: [
+    { element: <FacebookIcon />, link: 'https://www.facebook.com/nhkhoa.a/' },
+    { element: <GitHubIcon />, link: 'https://github.com/dev-nhkhoa' },
+    { element: <InstagramIcon />, link: 'https://www.instagram.com/nhkhoa.a/' }
   ]
 }
