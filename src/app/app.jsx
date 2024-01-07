@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/Home/Home'
+import Home from '../pages/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { experimental_extendTheme as extendTheme } from '@mui/material'
 import { Experimental_CssVarsProvider as MuiProvider } from '@mui/material'
@@ -27,12 +27,17 @@ const theme = extendTheme({
 
   typography: {
     title: {
-      fontSize: '12px',
+      fontSize: '18px',
       fontWeight: 'semi-bold',
       color: '#000'
     },
-    text: {
-      fontSize: '10px',
+    secondTitle: {
+      fontSize: '12px',
+      fontWeight: 'bold',
+      color: '#000'
+    },
+    desc: {
+      fontSize: '14px',
       fontWeight: 'normal',
       color: '#80706B'
     }
