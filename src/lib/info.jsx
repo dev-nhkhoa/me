@@ -8,9 +8,10 @@ export const INFO = {
   role: 'DEVELOPER / VIDEO EDITOR',
   introduction:
     'I am currently a 2nd years student at Van Lang University with information Systems major. I want to be a UI / UX Designer to make a better look for web or things in real life for every one.',
+  dateUpdate: '07/01/2024',
   works: [
     {
-      time: '2019 - 2021',
+      time: '2019 - 2022',
       work: [
         {
           role: 'Administrator - Developer',
@@ -31,9 +32,9 @@ export const INFO = {
       work: [
         {
           role: 'Make a Minecraft Server',
-          workPlace: 'LOCM NETWORK',
+          workPlace: 'Play With Friends',
           description:
-            'Code Minecraft plugins to support Bedrock Edition UI Forms using Java.'
+            'I learned to code by creating a Minecraft server for my friends. It started as a way to make the game more fun, but I became fascinated with coding and continued to learn and improve my skills.'
         }
       ]
     }
