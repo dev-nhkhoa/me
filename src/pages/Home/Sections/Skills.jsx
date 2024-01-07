@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material'
+import { SETTING } from '~/app/settings'
 import { INFO } from '~/lib/info'
 
 const Skills = () => {
@@ -15,7 +16,12 @@ const Skills = () => {
         SKILLS:
       </Typography>
       <Box
-        sx={{ display: 'flex', justifyContent: 'left', gap: '6px', pl: '48px' }}
+        sx={{
+          display: 'flex',
+          justifyContent: 'left',
+          gap: '6px',
+          pl: SETTING.paddingLeft
+        }}
       >
         {INFO.skills.map((skill, i) => {
           return <SkillCard key={i} name={skill.name} />
@@ -31,12 +37,14 @@ const SkillCard = (props) => {
   const { name } = props
   return (
     <Typography
+      variant='desc'
       sx={{
         width: '100px',
-        height: '17px',
+        height: '20px',
+        display: 'flex',
+        justifyContent: 'center',
         borderRadius: '6px',
-        color: '#fff    ',
-        fontSize: '12px',
+        color: '#fff',
         backgroundColor: '#80706B'
       }}
     >

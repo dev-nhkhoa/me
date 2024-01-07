@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material'
+import { SETTING } from '~/app/settings'
 import { INFO } from '~/lib/info'
 
 const Work = () => {
@@ -9,9 +10,7 @@ const Work = () => {
         flexDirection: 'column'
       }}
     >
-      <Typography
-        sx={{ fontSize: '18px', fontWeight: '500', textAlign: 'left' }}
-      >
+      <Typography variant='title' sx={{ textAlign: 'left' }}>
         WORK:
       </Typography>
       {INFO.works.map((work, index) => {
@@ -27,17 +26,23 @@ const WorkCard = (props) => {
   const { time, work } = props
   return (
     <Box
-      sx={{ display: 'flex', flexDirection: 'column', pl: '48px', pb: '20px' }}
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        pl: SETTING.paddingLeft,
+        pb: '20px'
+      }}
     >
-      <Typography
-        sx={{ fontSize: '12px', fontWeight: 'bold', textAlign: 'left' }}
-      >
+      <Typography variant='secondTitle' sx={{ textAlign: 'left' }}>
         {time}:
       </Typography>
       {work.map((w, index) => {
         return (
           <Box key={index}>
-            <Typography sx={{ fontSize: '14px', textAlign: 'left' }}>
+            <Typography
+              variant='desc'
+              sx={{ textAlign: 'left', color: '#000' }}
+            >
               {w.role} at {w.workPlace}
             </Typography>
             <div

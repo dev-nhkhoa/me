@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import { INFO } from '~/lib/info'
 import CircleIcon from '@mui/icons-material/Circle'
+import { SETTING } from '~/app/settings'
 
 const Project = () => {
   return (
@@ -10,9 +11,7 @@ const Project = () => {
         flexDirection: 'column'
       }}
     >
-      <Typography
-        sx={{ fontSize: '18px', fontWeight: '500', textAlign: 'left' }}
-      >
+      <Typography variant='title' sx={{ textAlign: 'left' }}>
         PROJECT:
       </Typography>
       <Box
@@ -20,7 +19,7 @@ const Project = () => {
           display: 'flex',
           gap: '6px',
           flexWrap: 'wrap',
-          pl: '18px',
+          pl: SETTING.paddingLeft,
           justifyContent: 'start'
         }}
       >
@@ -69,14 +68,6 @@ const ProjectCard = (props) => {
           gap: '2px'
         }}
       >
-        <Typography
-          sx={{
-            fontSize: '10px',
-            color: '#000',
-            fontWeight: 'bold',
-            textAlign: 'left'
-          }}
-        ></Typography>
         {name}
         {link !== '' ? (
           <CircleIcon sx={{ width: '5px', height: '5px', color: 'green' }} />
@@ -85,7 +76,7 @@ const ProjectCard = (props) => {
         )}
       </Box>
       <Typography
-        variant='text'
+        variant='desc'
         sx={{ fontSize: '14px', textAlign: 'left', pb: '15px' }}
       >
         {desc}

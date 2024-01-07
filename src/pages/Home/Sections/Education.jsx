@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material'
+import { SETTING } from '~/app/settings'
 import { INFO } from '~/lib/info'
 
 const Education = () => {
@@ -9,9 +10,7 @@ const Education = () => {
         flexDirection: 'column'
       }}
     >
-      <Typography
-        sx={{ fontSize: '18px', fontWeight: '500', textAlign: 'left' }}
-      >
+      <Typography variant='title' sx={{ textAlign: 'left' }}>
         EDUCATION:
       </Typography>
       {INFO.education.map((e, i) => {
@@ -31,13 +30,13 @@ const EducationCard = (props) => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        pl: '48px'
+        pl: SETTING.paddingLeft
       }}
     >
-      <Typography sx={{ fontSize: '13px', fontWeight: 'bold' }}>
-        {time}
+      <Typography variant='secondTitle' sx={{ fontWeight: 'bold' }}>
+        {time}:
       </Typography>
-      <Typography variant='text' sx={{ fontSize: '14px', textAlign: 'right' }}>
+      <Typography variant='desc' sx={{ fontSize: '14px', textAlign: 'right' }}>
         {school}
       </Typography>
     </Box>

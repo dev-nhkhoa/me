@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import { INFO } from '~/lib/info'
 import Avatar from '~/assets/images/avatar.jpg'
+import { SETTING } from '~/app/settings'
 
 const AboutMe = () => {
   return (
@@ -10,14 +11,11 @@ const AboutMe = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          pt: '28px'
+          pt: SETTING.paddingTop
         }}
       >
-        <Typography variant='text' sx={{ fontSize: '14px' }}>
-          {INFO.quote}
-        </Typography>
+        <Typography variant='desc'>{INFO.quote}</Typography>
       </Box>
-      {/* About Me */}
       <Box
         sx={{
           display: 'flex',
@@ -25,7 +23,6 @@ const AboutMe = () => {
           alignItems: 'center'
         }}
       >
-        {/*  about me */}
         <Box
           sx={{
             display: 'flex',
@@ -34,9 +31,7 @@ const AboutMe = () => {
           }}
         >
           <Typography>ABOUT</Typography>
-          <Typography sx={{ fontWeight: 'semi-bold', fontSize: '28px' }}>
-            ME
-          </Typography>
+          <Typography sx={{ fontSize: '28px' }}>ME</Typography>
         </Box>
         <Box
           sx={{
@@ -51,7 +46,7 @@ const AboutMe = () => {
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
               <Typography variant='title'>{INFO.fullName}</Typography>
               <Typography
-                variant='text'
+                variant='desc'
                 sx={{ fontWeight: 'bold', textAlign: 'right' }}
               >
                 {INFO.role}

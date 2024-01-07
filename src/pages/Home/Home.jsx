@@ -5,6 +5,7 @@ import Work from './Sections/Work'
 import Education from './Sections/Education'
 import Skills from './Sections/Skills'
 import Project from './Sections/Project'
+import End from './Sections/End'
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         <Education />
         <Skills />
         <Project />
+        <End />
       </Box>
     </Container>
   )

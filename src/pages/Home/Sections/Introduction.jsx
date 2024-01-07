@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material'
+import { SETTING } from '~/app/settings'
 import { INFO } from '~/lib/info'
 
 const Introduction = () => {
@@ -9,18 +10,15 @@ const Introduction = () => {
         flexDirection: 'column'
       }}
     >
-      <Typography
-        sx={{ fontSize: '18px', fontWeight: '500', textAlign: 'left' }}
-      >
+      <Typography variant='title' sx={{ textAlign: 'left' }}>
         INTRODUCE:
       </Typography>
       <Typography
-        variant='text'
+        variant='desc'
         sx={{
           textAlign: 'justify',
-          pl: '48px',
-          textIndent: '20px',
-          fontSize: '14px'
+          pl: SETTING.paddingLeft,
+          textIndent: SETTING.textIndent
         }}
       >
         {INFO.introduction}
