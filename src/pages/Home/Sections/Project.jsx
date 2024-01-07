@@ -57,7 +57,9 @@ const ProjectCard = (props) => {
       }}
       onClick={() => {
         // Liên kết link
-        window.open(link)
+        if (link !== '') {
+          window.open(link)
+        }
       }}
     >
       <Box
