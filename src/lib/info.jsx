@@ -46,10 +46,20 @@ export const INFO = {
     }
   ],
   skills: [
+    { name: 'Java' },
+    { name: 'Python' },
+    { name: 'PHP' },
+    { name: 'Dart' },
     { name: 'JavaScript' },
     { name: 'React' },
     { name: 'Figma' },
-    { name: 'Java' }
+    { name: 'PaperMC' },
+    { name: 'GeyserMC' },
+    { name: 'PocketmineMP' },
+    { name: 'Canva' },
+    { name: 'Adobe Photoshop' },
+    { name: 'Adobe Premeire' },
+    { name: 'CapCut' }
   ],
   projects: [
     {

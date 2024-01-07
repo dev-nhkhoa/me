@@ -18,6 +18,7 @@ const Skills = () => {
       <Box
         sx={{
           display: 'flex',
+          flexWrap: 'wrap',
           justifyContent: 'left',
           gap: '6px',
           pl: SETTING.paddingLeft
@@ -39,8 +40,8 @@ const SkillCard = (props) => {
     <Typography
       variant='desc'
       sx={{
-        width: '100px',
-        height: '20px',
+        px: '10px',
+        py: '3px',
         display: 'flex',
         justifyContent: 'center',
         borderRadius: '6px',
