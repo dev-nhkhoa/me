@@ -38,12 +38,12 @@ const WorkCard = (props) => {
       </Typography>
       {work.map((w, index) => {
         return (
-          <Box key={index}>
+          <Box key={index} sx={{ pb: '6px' }}>
             <Typography
               variant='desc'
               sx={{ textAlign: 'left', color: '#000' }}
             >
-              {w.role} at {w.workPlace}
+              {w.role} - {w.workPlace}
             </Typography>
             <div
               style={{

@@ -63,7 +63,7 @@ const ProjectCard = (props) => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'left',
           alignItems: 'center',
           gap: '2px'
         }}

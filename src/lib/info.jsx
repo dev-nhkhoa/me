@@ -14,16 +14,16 @@ export const INFO = {
       time: '2019 - 2022',
       work: [
         {
-          role: 'Administrator - Developer',
-          workPlace: 'LOCM NETWORK',
-          description:
-            'Code Minecraft plugins to support Bedrock Edition UI Forms using Java.'
-        },
-        {
-          role: 'OWNER',
+          role: 'Founder',
           workPlace: 'SOSCRAFT.NET',
           description:
             'Self-development of my Server. I did everything by myself liked: Code base plugins for the systems, and making Youtube, and Tiktok content to attract more members. It was a difficult time but based on that I have learned a lot of things and made a bit of profit.'
+        },
+        {
+          role: 'Administrator',
+          workPlace: 'LOCM NETWORK',
+          description:
+            'Code Minecraft plugins to support Bedrock Edition UI Forms using Java.'
         }
       ]
     },
@@ -53,10 +53,16 @@ export const INFO = {
   ],
   projects: [
     {
-      name: 'Minimalistic Web CV',
+      name: 'Minimal Web CV',
       desc: 'My CV in the web',
       tool: ['Javascript', 'Figma', 'React', 'Material UI'],
       link: 'https://github.com/dev-nhkhoa/me'
+    },
+    {
+      name: 'SOSCRAFT.NET',
+      desc: 'Cross platform Minecraft Server',
+      tool: ['Java', 'PaperMC', 'GeyserMC'],
+      link: ''
     }
   ],
   socials: [
