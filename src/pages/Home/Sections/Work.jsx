@@ -29,8 +29,7 @@ const WorkCard = (props) => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        pl: SETTING.paddingLeft,
-        pb: '20px'
+        pl: SETTING.paddingLeft
       }}
     >
       <Typography variant='secondTitle' sx={{ textAlign: 'left' }}>
