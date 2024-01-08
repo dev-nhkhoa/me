@@ -11,30 +11,23 @@ export const INFO = {
   dateUpdate: '07/01/2024',
   works: [
     {
-      time: '2019 - 2022',
+      time: '2022 - now',
       work: [
         {
-          role: 'Founder',
-          workPlace: 'SOSCRAFT.NET',
-          description:
-            'Self-development of my Server. I did everything by myself liked: Code base plugins for the systems, and making Youtube, and Tiktok content to attract more members. It was a difficult time but based on that I have learned a lot of things and made a bit of profit.'
-        },
-        {
-          role: 'Administrator',
-          workPlace: 'LOCM NETWORK',
-          description:
-            'Code Minecraft plugins to support Bedrock Edition UI Forms using Java.'
+          role: 'Learning front-end',
+          workPlace: 'Home',
+          description: 'Updating my skills by now.'
         }
       ]
     },
     {
-      time: '2018 - 2019',
+      time: '2018 - 2022',
       work: [
         {
-          role: 'Make a Minecraft Server',
-          workPlace: 'Play With Friends',
+          role: 'Minecraft Server Development',
+          workPlace: 'Remote',
           description:
-            'I learned to code by creating a Minecraft server for my friends. It started as a way to make the game more fun, but I became fascinated with coding and continued to learn and improve my skills.'
+            'Code plugins using Java, PHP for Startup Minecraft Server. ( LOCM NETWORK, SOSCRAFT.NET, GACHCRAFT.NET )'
         }
       ]
     }
@@ -79,5 +72,6 @@ export const INFO = {
     { element: <FacebookIcon />, link: 'https://www.facebook.com/nhkhoa.a/' },
     { element: <GitHubIcon />, link: 'https://github.com/dev-nhkhoa' },
     { element: <InstagramIcon />, link: 'https://www.instagram.com/nhkhoa.a/' }
-  ]
+  ],
+  love: ['Tech', 'Music', 'Art', 'Games', 'Furniture']
 }

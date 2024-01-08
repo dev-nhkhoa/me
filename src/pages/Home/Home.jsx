@@ -6,6 +6,7 @@ import Education from './Sections/Education'
 import Skills from './Sections/Skills'
 import Project from './Sections/Project'
 import End from './Sections/End'
+import WhatILove from './Sections/WhatILove'
 
 const Home = () => {
   return (
@@ -29,6 +30,7 @@ const Home = () => {
       >
         <AboutMe />
         <Introduction />
+        <WhatILove />
         <Work />
         <Education />
         <Skills />
