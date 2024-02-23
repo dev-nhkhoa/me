@@ -26,13 +26,13 @@ const AboutMe = () => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: { xs: 'right', sm: 'space-between' },
           alignItems: 'center'
         }}
       >
         <Box
           sx={{
-            display: 'flex',
+            display: { xs: 'none', sm: 'flex' },
             flexDirection: 'column',
             alignItems: 'start'
           }}
@@ -51,9 +51,7 @@ const AboutMe = () => {
           <Box sx={{ display: 'flex', gap: 2, justifyContent: 'end' }}>
             {/* role & social */}
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Typography variant='title' sx={{ textAlign: { xs: 'right', sm: 'center' } }}>
-                {INFO.fullName}
-              </Typography>
+              <Typography sx={{ textAlign: { xs: 'right', sm: 'center' }, fontSize: { xs: '14px', sm: '18px' } }}>{INFO.fullName}</Typography>
               <Typography variant='desc' sx={{ fontWeight: 'bold', textAlign: 'right' }}>
                 {INFO.role}
               </Typography>
