@@ -3,7 +3,21 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import InstagramIcon from '@mui/icons-material/Instagram'
 
 export const INFO = {
-  quote: '“Keep learning every day! Be better than you yesterday.”',
+  quotes: [
+    {
+      quote: '“Learning never exhaust the mind”',
+      author: 'Leonardo Da Vinci.'
+    },
+    {
+      quote: '“Learning how to learn is the most important skill.”',
+      author: 'Tony Buzan.'
+    },
+    {
+      quote: '“Always keep things simple.”',
+      author: 'me.'
+    }
+  ],
+  // quote: '“Learning never exhaust the mind”',
   fullName: 'TRUONG NGUYEN ANH KHOA',
   role: 'DEVELOPER / VIDEO EDITOR',
   introduction:
@@ -26,8 +40,7 @@ export const INFO = {
         {
           role: 'Minecraft Server Development',
           workPlace: 'Remote',
-          description:
-            'Code plugins using Java, PHP for Startup Minecraft Server. ( LOCM NETWORK, SOSCRAFT.NET, GACHCRAFT.NET )'
+          description: 'Code plugins using Java, PHP for Startup Minecraft Server. ( LOCM NETWORK, SOSCRAFT.NET, GACHCRAFT.NET )'
         }
       ]
     }

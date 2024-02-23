@@ -2,8 +2,10 @@ import { Box, Typography } from '@mui/material'
 import { INFO } from '~/app/info'
 import Avatar from '~/assets/images/avatar.jpg'
 import { SETTING } from '~/app/settings'
+import { randomQuote } from '~/utils/randomQuote'
 
 const AboutMe = () => {
+  const generateQuote = randomQuote()
   return (
     <>
       <Box
@@ -14,7 +16,12 @@ const AboutMe = () => {
           pt: SETTING.paddingTop
         }}
       >
-        <Typography variant='desc'>{INFO.quote}</Typography>
+        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+          <Typography variant='desc'>{generateQuote.quote}</Typography>
+          <Typography variant='desc' sx={{ textAlign: 'right' }}>
+            {generateQuote.author}
+          </Typography>
+        </Box>
       </Box>
       <Box
         sx={{
