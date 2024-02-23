@@ -51,33 +51,18 @@ export const INFO = {
       school: 'Learning Information Systems at Van Lang University.'
     }
   ],
-  skills: [
-    { name: 'Java' },
-    { name: 'Python' },
-    { name: 'PHP' },
-    { name: 'Dart' },
-    { name: 'JavaScript' },
-    { name: 'React' },
-    { name: 'Figma' },
-    { name: 'PaperMC' },
-    { name: 'GeyserMC' },
-    { name: 'PocketmineMP' },
-    { name: 'Canva' },
-    { name: 'Adobe Photoshop' },
-    { name: 'Adobe Premeire' },
-    { name: 'CapCut' }
-  ],
+  skills: [{ name: 'JavaScript' }, { name: 'Material UI' }, { name: 'HTML' }],
   projects: [
     {
       name: 'Minimal Web CV',
       desc: 'My CV in the web',
-      tool: ['Javascript', 'Figma', 'React', 'Material UI'],
+      tool: ['ReactJS', 'Material UI'],
       link: 'https://github.com/dev-nhkhoa/me'
     },
     {
       name: 'SOSCRAFT.NET',
       desc: 'Cross platform Minecraft Server',
-      tool: ['Java', 'PaperMC', 'GeyserMC'],
+      tool: ['Java'],
       link: ''
     }
   ],
