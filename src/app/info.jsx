@@ -1,6 +1,7 @@
 import FacebookIcon from '@mui/icons-material/Facebook'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import InstagramIcon from '@mui/icons-material/Instagram'
+import { getDate } from '~/utils/getCurrentDate'
 
 export const INFO = {
   quotes: [
@@ -17,12 +18,11 @@ export const INFO = {
       author: 'me.'
     }
   ],
-  // quote: '“Learning never exhaust the mind”',
   fullName: 'TRUONG NGUYEN ANH KHOA',
   role: 'DEVELOPER / VIDEO EDITOR',
   introduction:
     'I am currently a 2nd years student at Van Lang University with information Systems major. I want to be a UI / UX Designer to make a better look for web or things in real life for every one.',
-  dateUpdate: '07/01/2024',
+  dateUpdate: getDate(),
   works: [
     {
       time: '2022 - now',
