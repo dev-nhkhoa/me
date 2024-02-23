@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { SETTING } from '~/app/settings'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 
 const Introduction = () => {
   return (

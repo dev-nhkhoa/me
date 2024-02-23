@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { SETTING } from '~/app/settings'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 
 const Work = () => {
   return (
@@ -38,10 +38,7 @@ const WorkCard = (props) => {
       {work.map((w, index) => {
         return (
           <Box key={index} sx={{ pb: '6px' }}>
-            <Typography
-              variant='desc'
-              sx={{ textAlign: 'left', color: '#000' }}
-            >
+            <Typography variant='desc' sx={{ textAlign: 'left', color: '#000' }}>
               {w.role} - {w.workPlace}
             </Typography>
             <div

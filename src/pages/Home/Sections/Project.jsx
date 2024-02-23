@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 import CircleIcon from '@mui/icons-material/Circle'
 import { SETTING } from '~/app/settings'
 
@@ -24,15 +24,7 @@ const Project = () => {
         }}
       >
         {INFO.projects.map((p, index) => {
-          return (
-            <ProjectCard
-              key={index}
-              name={p.name}
-              desc={p.desc}
-              tools={p.tool}
-              link={p.link}
-            />
-          )
+          return <ProjectCard key={index} name={p.name} desc={p.desc} tools={p.tool} link={p.link} />
         })}
       </Box>
     </Box>
@@ -71,16 +63,9 @@ const ProjectCard = (props) => {
         }}
       >
         {name}
-        {link !== '' ? (
-          <CircleIcon sx={{ width: '5px', height: '5px', color: 'green' }} />
-        ) : (
-          ''
-        )}
+        {link !== '' ? <CircleIcon sx={{ width: '5px', height: '5px', color: 'green' }} /> : ''}
       </Box>
-      <Typography
-        variant='desc'
-        sx={{ fontSize: '14px', textAlign: 'left', pb: '15px' }}
-      >
+      <Typography variant='desc' sx={{ fontSize: '14px', textAlign: 'left', pb: '15px' }}>
         {desc}
       </Typography>
       <Box

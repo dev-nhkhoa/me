@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import { SETTING } from '~/app/settings'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 
 const Skills = () => {
   return (
@@ -10,11 +10,7 @@ const Skills = () => {
         flexDirection: 'column'
       }}
     >
-      <Typography
-        sx={{ fontSize: '18px', fontWeight: '500', textAlign: 'left' }}
-      >
-        SKILLS:
-      </Typography>
+      <Typography sx={{ fontSize: '18px', fontWeight: '500', textAlign: 'left' }}>SKILLS:</Typography>
       <Box
         sx={{
           display: 'flex',

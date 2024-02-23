@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 import Avatar from '~/assets/images/avatar.jpg'
 import { SETTING } from '~/app/settings'
 
@@ -45,10 +45,7 @@ const AboutMe = () => {
             {/* role & social */}
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
               <Typography variant='title'>{INFO.fullName}</Typography>
-              <Typography
-                variant='desc'
-                sx={{ fontWeight: 'bold', textAlign: 'right' }}
-              >
+              <Typography variant='desc' sx={{ fontWeight: 'bold', textAlign: 'right' }}>
                 {INFO.role}
               </Typography>
               <Box
@@ -61,11 +58,7 @@ const AboutMe = () => {
               >
                 {INFO.socials.map((s, i) => {
                   return (
-                    <Box
-                      sx={{ cursor: 'pointer' }}
-                      key={i}
-                      onClick={() => window.open(s.link)}
-                    >
+                    <Box sx={{ cursor: 'pointer' }} key={i} onClick={() => window.open(s.link)}>
                       {s.element}
                     </Box>
                   )

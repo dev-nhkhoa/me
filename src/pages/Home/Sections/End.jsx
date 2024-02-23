@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 import packageJson from '../../../../package.json'
 const End = () => {
   return (

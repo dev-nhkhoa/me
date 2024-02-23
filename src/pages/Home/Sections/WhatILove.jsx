@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import FavoriteIcon from '@mui/icons-material/Favorite'
-import { INFO } from '~/lib/info'
+import { INFO } from '~/app/info'
 import { SETTING } from '~/app/settings'
 
 const WhatILove = () => {
