@@ -24,7 +24,15 @@ const Project = () => {
         }}
       >
         {INFO.projects.map((p, index) => {
-          return <ProjectCard key={index} name={p.name} desc={p.desc} tools={p.tool} link={p.link} />
+          return (
+            <ProjectCard
+              key={index}
+              name={p.name}
+              desc={p.desc}
+              tools={p.tool}
+              link={p.link}
+            />
+          )
         })}
       </Box>
     </Box>
@@ -62,10 +70,25 @@ const ProjectCard = (props) => {
           gap: '2px'
         }}
       >
-        {name}
-        {link !== '' ? <CircleIcon sx={{ width: '5px', height: '5px', color: 'green' }} /> : ''}
+        <Typography
+          sx={{
+            fontSize: { xs: '14px', sm: '18px' },
+            textAlign: 'left',
+            pb: '15px'
+          }}
+        >
+          {name}
+        </Typography>
+        {link !== '' ? (
+          <CircleIcon sx={{ width: '5px', height: '5px', color: 'green' }} />
+        ) : (
+          ''
+        )}
       </Box>
-      <Typography variant='desc' sx={{ fontSize: '14px', textAlign: 'left', pb: '15px' }}>
+      <Typography
+        variant='desc'
+        sx={{ fontSize: '14px', textAlign: 'left', pb: '15px' }}
+      >
         {desc}
       </Typography>
       <Box
