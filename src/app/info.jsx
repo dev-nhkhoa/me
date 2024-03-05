@@ -19,28 +19,19 @@ export const INFO = {
     }
   ],
   fullName: 'TRUONG NGUYEN ANH KHOA',
-  role: 'DEVELOPER / VIDEO EDITOR',
+  role: 'DEVELOPER',
   introduction:
-    'I am currently a 2nd years student at Van Lang University with information Systems major. I want to be a UI / UX Designer to make a better look for web or things in real life for every one.',
+    'I am currently a 2nd years student at Van Lang University with information Systems major.',
   dateUpdate: getDate(),
   works: [
-    {
-      time: '2022 - now',
-      work: [
-        {
-          role: 'Learning front-end',
-          workPlace: 'Home',
-          description: 'Updating my skills by now.'
-        }
-      ]
-    },
     {
       time: '2018 - 2022',
       work: [
         {
           role: 'Minecraft Server Development',
           workPlace: 'Remote',
-          description: 'Code plugins using Java, PHP for Startup Minecraft Server. ( LOCM NETWORK, SOSCRAFT.NET, GACHCRAFT.NET )'
+          description:
+            'Code plugins using Java, PHP for Startup Minecraft Server. ( LOCM NETWORK, SOSCRAFT.NET, GACHCRAFT.NET )'
         }
       ]
     }
@@ -51,7 +42,7 @@ export const INFO = {
       school: 'Learning Information Systems at Van Lang University.'
     }
   ],
-  skills: [{ name: 'JavaScript' }, { name: 'Material UI' }, { name: 'HTML' }],
+  skills: [{ name: 'JavaScript' }],
   projects: [
     {
       name: 'Minimal Web CV',
