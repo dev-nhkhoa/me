@@ -6,28 +6,16 @@ const End = () => {
     <Box
       sx={{
         display: 'flex',
-        justifyContent: 'right',
-        alignItems: 'center',
-        gap: '15px'
+        flexDirection: 'column',
+        alignItems: 'end'
       }}
     >
-      <Typography variant='desc' sx={{ textAlign: 'left' }}>
-        This CV made by me (nhkhoa)
+      <Typography variant='desc' sx={{ textAlign: 'right' }}>
+        Last edited at {INFO.dateUpdate}
       </Typography>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'end'
-        }}
-      >
-        <Typography variant='desc' sx={{ textAlign: 'right' }}>
-          Last edited at {INFO.dateUpdate}
-        </Typography>
-        <Typography variant='desc' sx={{ textAlign: 'right' }}>
-          Version: {packageJson.version}
-        </Typography>
-      </Box>
+      <Typography variant='desc' sx={{ textAlign: 'right' }}>
+        Version: {packageJson.version}
+      </Typography>
     </Box>
   )
 }
