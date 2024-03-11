@@ -7,8 +7,9 @@ import Skills from './Sections/Skills'
 import Project from './Sections/Project'
 import End from './Sections/End'
 import WhatILove from './Sections/WhatILove'
+import ResponsiveAppBar from '~/components/AppBar/ResponsiveAppBar'
 
-const Home = () => {
+const DashBoard = () => {
   return (
     <Container
       maxWidth='100%'
@@ -16,10 +17,14 @@ const Home = () => {
       sx={{
         height: '100%',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center'
       }}
     >
+      <Container maxWidth='md' disableGutters>
+        <ResponsiveAppBar />
+      </Container>
       <Box
         sx={{
           width: { md: '600px', sm: '450px', xs: '350px' },
@@ -41,4 +46,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default DashBoard
