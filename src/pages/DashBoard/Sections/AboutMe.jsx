@@ -12,10 +12,8 @@ const AboutMe = () => {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
-          pt: SETTING.paddingTop
-        }}
-      >
+          alignItems: 'center'
+        }}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant='desc'>{generateQuote.quote}</Typography>
           <Typography variant='desc' sx={{ textAlign: 'right' }}>
@@ -28,15 +26,13 @@ const AboutMe = () => {
           display: 'flex',
           justifyContent: { xs: 'right', sm: 'space-between' },
           alignItems: 'center'
-        }}
-      >
+        }}>
         <Box
           sx={{
             display: { xs: 'none', sm: 'flex' },
             flexDirection: 'column',
             alignItems: 'start'
-          }}
-        >
+          }}>
           <Typography>ABOUT</Typography>
           <Typography sx={{ fontSize: '28px' }}>ME</Typography>
         </Box>
@@ -45,14 +41,21 @@ const AboutMe = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'end'
-          }}
-        >
+          }}>
           {/* Avater & role & social */}
           <Box sx={{ display: 'flex', gap: 2, justifyContent: 'end' }}>
             {/* role & social */}
             <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-              <Typography sx={{ textAlign: { xs: 'right', sm: 'center' }, fontSize: { xs: '14px', sm: '18px' } }}>{INFO.fullName}</Typography>
-              <Typography variant='desc' sx={{ fontWeight: 'bold', textAlign: 'right' }}>
+              <Typography
+                sx={{
+                  textAlign: { xs: 'right', sm: 'center' },
+                  fontSize: { xs: '14px', sm: '18px' }
+                }}>
+                {INFO.fullName}
+              </Typography>
+              <Typography
+                variant='desc'
+                sx={{ fontWeight: 'bold', textAlign: 'right' }}>
                 {INFO.role}
               </Typography>
               <Box
@@ -61,11 +64,13 @@ const AboutMe = () => {
                   gap: '6px',
                   justifyContent: 'right',
                   pt: '6px'
-                }}
-              >
+                }}>
                 {INFO.socials.map((s, i) => {
                   return (
-                    <Box sx={{ cursor: 'pointer' }} key={i} onClick={() => window.open(s.link)}>
+                    <Box
+                      sx={{ cursor: 'pointer' }}
+                      key={i}
+                      onClick={() => window.open(s.link)}>
                       {s.element}
                     </Box>
                   )
@@ -79,8 +84,7 @@ const AboutMe = () => {
                 backgroundColor: '#999',
                 borderRadius: '99999px',
                 border: '1px solid #000'
-              }}
-            >
+              }}>
               <img
                 src={Avatar}
                 style={{

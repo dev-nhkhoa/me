@@ -12,10 +12,11 @@ import MenuItem from '@mui/material/MenuItem'
 import { useNavigate } from 'react-router-dom'
 
 const pages = [
-  { name: 'My CV', navigate: 'my-cv' },
-  { name: 'Moments', navigate: 'moments' },
-  { name: 'Stories', navigate: 'stories' },
-  { name: 'My Wiki', navigate: 'my-wiki' }
+  { name: 'Home', navigate: '/' }
+  // { name: 'Hỗ trợ VLU', navigate: '/vlu-helper' }
+  // { name: 'Moments', navigate: 'moments' },
+  // { name: 'Stories', navigate: 'stories' },
+  // { name: 'My Wiki', navigate: 'my-wiki' }
 ]
 
 function ResponsiveAppBar() {
@@ -34,8 +35,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position='static'
-      sx={{ borderRadius: '12px', backgroundColor: '#000', opacity: '0.9' }}
-    >
+      sx={{ borderRadius: '24px', backgroundColor: '#252525', opacity: '0.9' }}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -45,8 +45,7 @@ function ResponsiveAppBar() {
               aria-controls='menu-appbar'
               aria-haspopup='true'
               onClick={handleOpenNavMenu}
-              color='inherit'
-            >
+              color='inherit'>
               <MenuIcon />
             </IconButton>
             <Menu
@@ -65,13 +64,11 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' }
-              }}
-            >
+              }}>
               {pages.map((page) => (
                 <MenuItem
                   key={page.name}
-                  onClick={() => handleCloseNavMenu(page.navigate)}
-                >
+                  onClick={() => handleCloseNavMenu(page.navigate)}>
                   <Typography textAlign='center'>{page.name}</Typography>
                 </MenuItem>
               ))}
@@ -82,22 +79,21 @@ function ResponsiveAppBar() {
             sx={{
               flexGrow: 1,
               display: { xs: 'none', md: 'flex' }
-            }}
-          >
+            }}>
             {pages.map((page) => (
               <Button
                 key={page.name}
                 onClick={() => handleCloseNavMenu(page.navigate)}
                 sx={{
-                  my: 2,
+                  borderRadius: '12px',
+                  px: '5px',
                   color: 'white',
                   display: 'block',
                   ':hover': {
                     backgroundColor: '#f5f5f5',
                     color: '#000'
                   }
-                }}
-              >
+                }}>
                 {page.name}
               </Button>
             ))}

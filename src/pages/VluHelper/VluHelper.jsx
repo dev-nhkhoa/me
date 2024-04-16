@@ -1,15 +1,7 @@
 import { Box, Container } from '@mui/material'
-import AboutMe from './Sections/AboutMe'
-import Introduction from './Sections/Introduction'
-import Work from './Sections/Work'
-import Education from './Sections/Education'
-import Skills from './Sections/Skills'
-import Project from './Sections/Project'
-import End from './Sections/End'
-import WhatILove from './Sections/WhatILove'
 import ResponsiveAppBar from '~/components/AppBar/ResponsiveAppBar'
 
-const DashBoard = () => {
+const VluHelper = () => {
   return (
     <Container
       maxWidth='100%'
@@ -32,17 +24,9 @@ const DashBoard = () => {
         <Box sx={{ width: '100%' }}>
           <ResponsiveAppBar />
         </Box>
-        <AboutMe />
-        <Introduction />
-        <WhatILove />
-        <Work />
-        <Education />
-        <Skills />
-        <Project />
-        <End />
       </Box>
     </Container>
   )
 }
 
-export default DashBoard
+export default VluHelper

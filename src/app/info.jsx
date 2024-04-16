@@ -45,6 +45,12 @@ export const INFO = {
   skills: [{ name: 'JavaScript' }],
   projects: [
     {
+      name: 'CalenVLU',
+      desc: 'Move Vlu Calendar to Google Calendar',
+      tool: ['ReactJS', 'Material UI', 'NodeJS', 'Google API'],
+      link: 'https://calen-vlu.vercel.app'
+    },
+    {
       name: 'Minimal Web CV',
       desc: 'My CV in the web',
       tool: ['ReactJS', 'Material UI'],

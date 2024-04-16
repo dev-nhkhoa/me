@@ -1,23 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider
-} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { experimental_extendTheme as extendTheme } from '@mui/material'
 import { Experimental_CssVarsProvider as MuiProvider } from '@mui/material'
 import '@fontsource/inter'
 import DashBoard from '../pages/DashBoard/DashBoard'
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<DashBoard />}>
-      {/* <Route path='cv' element={<CV />} /> */}
-      {/* ... etc. */}
-    </Route>
-  )
-)
+import VluHelper from '~/pages/VluHelper/VluHelper'
+import '../global.css'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <DashBoard />
+  },
+  {
+    path: '/vlu-helper',
+    element: <VluHelper />
+  }
+])
 
 const theme = extendTheme({
   components: {
