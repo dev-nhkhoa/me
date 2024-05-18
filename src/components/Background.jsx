@@ -21,7 +21,7 @@ function Background({ children }) {
       </Box>
       <Box
         sx={{
-          width: '450px',
+          width: { xs: '300px', md: '450px' },
           display: 'flex',
           flexDirection: 'column',
           gap: '28px',

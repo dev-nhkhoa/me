@@ -41,9 +41,9 @@ const WorkCard = (props) => {
           return (
             <Box key={index} sx={{ pb: '6px', display: 'flex', justifyContent: 'right', flexDirection: 'column' }}>
               <Typography variant="desc" sx={{ textAlign: 'right', color: 'primary.text.primary', fontWeight: 'bold', textDecoration: 'underline', cursor: 'pointer' }}>
-                {w.role} - {w.workPlace}:
+                {w.role}:
               </Typography>
-              <Box sx={{ textAlign: 'right' }}>
+              <Box sx={{ textAlign: 'justify', textIndent: SETTING.textIndent }}>
                 <Typography
                   variant="desc"
                   sx={{

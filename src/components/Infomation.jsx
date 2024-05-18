@@ -16,6 +16,10 @@ export const INFO = {
     {
       quote: '“Always keep things simple.”',
       author: 'me.'
+    },
+    {
+      quote: '“Do not lose yourself.”',
+      author: 'me.'
     }
   ],
   fullName: 'TRUONG NGUYEN ANH KHOA',
@@ -68,7 +72,7 @@ export const INFO = {
       )
     }
   ],
-  skills: [{ name: 'JavaScript' }, { name: 'ReactJS' }, { name: 'NodeJS' }, { name: 'Java' }],
+  skills: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }, { name: 'ReactJS' }, { name: 'NodeJS' }, { name: 'Java' }, { name: 'PHP' }, { name: 'Adobe Photoshop' }, { name: 'Adobe Premiere' }, { name: 'Canva' }],
   projects: [
     {
       name: 'CalenVLU',
@@ -87,12 +91,6 @@ export const INFO = {
       desc: 'A cross platform Minecraft Server.',
       tool: ['Java'],
       link: ''
-    },
-    {
-      name: 'SOSCRAFT.NET',
-      desc: 'A cross platform Minecraft Server.',
-      tool: ['Java'],
-      link: ''
     }
   ],
   socials: [
@@ -100,5 +98,5 @@ export const INFO = {
     { element: <GitHubIcon />, link: 'https://github.com/dev-nhkhoa' },
     { element: <InstagramIcon />, link: 'https://www.instagram.com/nhkhoa.a/' }
   ],
-  love: ['Tech', 'Music', 'Art', 'Games', 'Furniture']
+  love: ['Music', 'Art', 'Esport', 'Furniture', 'Universe', 'Movies', 'Travel']
 }
