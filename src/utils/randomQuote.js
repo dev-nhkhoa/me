@@ -1,4 +1,4 @@
-import { INFO } from '~/app/info'
+import { INFO } from '~/components/Infomation'
 
 const quotes = INFO.quotes
 
