@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { SETTING } from '~/settings'
 import Card from '~/components/Card'
 import TypographyTitle from '~/components/TypographyTitle'

@@ -6,7 +6,7 @@ import { Experimental_CssVarsProvider as MuiProvider } from '@mui/material'
 
 import './App.css'
 import { theme } from './theme'
-import { router } from './router'
+import { router } from './Router'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
