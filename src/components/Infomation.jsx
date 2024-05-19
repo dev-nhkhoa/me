@@ -72,7 +72,7 @@ export const INFO = {
       )
     }
   ],
-  skills: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }, { name: 'ReactJS' }, { name: 'NodeJS' }, { name: 'Java' }, { name: 'PHP' }, { name: 'Adobe Photoshop' }, { name: 'Adobe Premiere' }, { name: 'Canva' }],
+  skills: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JavaScript' }, { name: 'ReactJS' }, { name: 'NodeJS' }, { name: 'Java' }, { name: 'PHP' }, { name: 'Canva' }, { name: 'Adobe Photoshop' }, { name: 'Adobe Premiere' }],
   projects: [
     {
       name: 'CalenVLU',

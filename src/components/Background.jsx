@@ -13,7 +13,8 @@ function Background({ children }) {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'primary.main'
+        backgroundColor: 'primary.main',
+        pb: 4
       }}
     >
       <Box sx={{ width: '100%' }}>
