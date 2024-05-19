@@ -1,6 +1,8 @@
-import { Box, Container } from '@mui/material'
-import ResponsiveAppBar from './ResponsiveAppBar'
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
+
 import Footer from './Footer'
+import ResponsiveAppBar from './ResponsiveAppBar/ResponsiveAppBar'
 
 function Background({ children }) {
   return (

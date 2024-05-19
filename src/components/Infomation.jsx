@@ -1,7 +1,7 @@
 import FacebookIcon from '@mui/icons-material/Facebook'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import InstagramIcon from '@mui/icons-material/Instagram'
-import { Link } from '@mui/material'
+import Link from '@mui/material/Link'
 
 export const INFO = {
   quotes: [

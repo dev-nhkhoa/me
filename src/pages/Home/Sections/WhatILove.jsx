@@ -1,17 +1,15 @@
-import { Box } from '@mui/material'
-import { SETTING } from '~/settings'
+import Box from '@mui/material/Box'
 import Card from '~/components/Card'
-import TypographyTitle from '~/components/TypographyTitle'
+
+import { SETTING } from '~/settings'
 import { INFO } from '~/components/Infomation'
 
-const WhatILove = () => {
+import TypographyTitle from '~/components/TypographyTitle'
+import BackgroundSection from '~/components/BackgroundSection'
+
+function WhatILove() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column'
-      }}
-    >
+    <BackgroundSection>
       <TypographyTitle text="INTERESTED" />
       <Box
         sx={{
@@ -26,7 +24,7 @@ const WhatILove = () => {
           return <Card key={i} name={l} color="primary.button.text" bgColor="primary.button.bg" />
         })}
       </Box>
-    </Box>
+    </BackgroundSection>
   )
 }
 

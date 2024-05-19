@@ -1,17 +1,15 @@
-import { Box } from '@mui/material'
-import { SETTING } from '~/settings'
+import Box from '@mui/material/Box'
 import Card from '~/components/Card'
-import TypographyTitle from '~/components/TypographyTitle'
+
+import { SETTING } from '~/settings'
 import { INFO } from '~/components/Infomation'
 
-const Skills = () => {
+import TypographyTitle from '~/components/TypographyTitle'
+import BackgroundSection from '~/components/BackgroundSection'
+
+function Skills() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column'
-      }}
-    >
+    <BackgroundSection>
       <TypographyTitle text="SKILLS" />
 
       <Box
@@ -27,7 +25,7 @@ const Skills = () => {
           return <Card key={i} name={skill.name} color="primary.button.text" bgColor="primary.button.bg" />
         })}
       </Box>
-    </Box>
+    </BackgroundSection>
   )
 }
 

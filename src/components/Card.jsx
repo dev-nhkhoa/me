@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
 
 function Card(props) {
   const { name, color, bgColor } = props

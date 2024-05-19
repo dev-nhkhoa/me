@@ -1,23 +1,22 @@
-import { Box, Typography } from '@mui/material'
-import { INFO } from '~/components/Infomation'
-import TypographyTitle from '~/components/TypographyTitle'
-import { SETTING } from '~/settings'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
 
-const Work = () => {
+import TypographyTitle from '~/components/TypographyTitle'
+import BackgroundSection from '~/components/BackgroundSection'
+
+import { SETTING } from '~/settings'
+import { INFO } from '~/components/Infomation'
+
+function Work() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column'
-      }}
-    >
+    <BackgroundSection>
       <TypographyTitle text="WORK" />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         {INFO.works.map((work, index) => {
           return <WorkCard key={index} time={work.time} work={work.work} />
         })}
       </Box>
-    </Box>
+    </BackgroundSection>
   )
 }
 

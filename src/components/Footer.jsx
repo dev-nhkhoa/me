@@ -1,6 +1,6 @@
-import { Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
 
-const Footer = () => {
+function Footer() {
   return (
     <Typography variant="desc" sx={{ color: 'primary.text.third', textAlign: 'center' }}>
       © 2024 Nhkhoa. All Rights Reserved.

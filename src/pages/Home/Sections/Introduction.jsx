@@ -1,16 +1,14 @@
-import { Box, Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
+
 import { SETTING } from '~/settings'
-import TypographyTitle from '~/components/TypographyTitle'
 import { INFO } from '~/components/Infomation'
 
-const Introduction = () => {
+import TypographyTitle from '~/components/TypographyTitle'
+import BackgroundSection from '~/components/BackgroundSection'
+
+function Introduction() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column'
-      }}
-    >
+    <BackgroundSection>
       <TypographyTitle text="INTRODUCE" />
       <Typography
         variant="desc"
@@ -23,7 +21,7 @@ const Introduction = () => {
       >
         {INFO.introduction}
       </Typography>
-    </Box>
+    </BackgroundSection>
   )
 }
 

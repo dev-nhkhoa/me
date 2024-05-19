@@ -22,10 +22,7 @@ const theme = extendTheme({
             secondary: '#252525',
             third: '#CFB997'
           },
-          button: {
-            bg: '#000',
-            text: '#fff'
-          }
+          button: { bg: '#000', text: '#fff' }
         }
       }
     },
@@ -38,10 +35,7 @@ const theme = extendTheme({
             secondary: '#f5f5f5',
             third: '#b2b2b2'
           },
-          button: {
-            bg: '#c2bdb5',
-            text: '#252525'
-          }
+          button: { bg: '#c2bdb5', text: '#252525' }
         }
       }
     }

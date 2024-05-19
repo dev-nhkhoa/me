@@ -1,23 +1,21 @@
-import { Box, Typography } from '@mui/material'
-import { SETTING } from '~/settings'
-import TypographyTitle from '~/components/TypographyTitle'
-import { INFO } from '~/components/Infomation'
+import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box'
 
-const Education = () => {
+import { SETTING } from '~/settings'
+import { INFO } from '~/components/Infomation'
+import TypographyTitle from '~/components/TypographyTitle'
+import BackgroundSection from '~/components/BackgroundSection'
+
+function Education() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column'
-      }}
-    >
+    <BackgroundSection>
       <TypographyTitle text="EDUCATION" />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         {INFO.education.map((e, i) => {
           return <EducationCard key={i} time={e.time} school={e.school} />
         })}
       </Box>
-    </Box>
+    </BackgroundSection>
   )
 }
 

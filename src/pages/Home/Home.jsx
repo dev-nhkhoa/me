@@ -7,12 +7,7 @@ import Project from './Sections/Project'
 import WhatILove from './Sections/WhatILove'
 import Background from '~/components/Background'
 
-const Home = () => {
-  // NOTE:
-  // loại bỏ setting
-  // tạo component cho Skill Card, love card children : bgColor & color done
-  // fix footer done
-  // project card fixed height, nếu nhiều card con quá thì hiện ...
+function Home() {
   return (
     <Background>
       <AboutMe />

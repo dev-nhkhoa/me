@@ -1,9 +1,11 @@
-import { Box, Typography } from '@mui/material'
+import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box'
+
 import Avatar from '~/assets/images/avatar.jpg'
 import { INFO } from '~/components/Infomation'
 import { randomQuote } from '~/utils/randomQuote'
 
-const AboutMe = () => {
+function AboutMe() {
   const generateQuote = randomQuote()
   return (
     <>
