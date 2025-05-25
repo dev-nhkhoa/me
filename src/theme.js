@@ -1,41 +1,64 @@
 import { experimental_extendTheme as extendTheme } from '@mui/material'
+import { BRANDING_CONFIG } from '~/config/branding.js'
+
+const { typography, colors, dimensions } = BRANDING_CONFIG
 
 const theme = extendTheme({
   components: {
     MuiTypography: {
-      styleOverrides: { root: { fontFamily: 'monospace' } }
+      styleOverrides: { 
+        root: { 
+          fontFamily: typography.fontFamily 
+        } 
+      }
     }
   },
 
   typography: {
-    title: { fontSize: '18px', fontWeight: 'semi-bold' },
-    secondTitle: { fontSize: '12px', fontWeight: 'bold' },
-    desc: { fontSize: '14px', fontWeight: 'normal' }
+    title: { 
+      fontSize: typography.sizes.title, 
+      fontWeight: typography.weights.semiBold 
+    },
+    secondTitle: { 
+      fontSize: typography.sizes.secondTitle, 
+      fontWeight: typography.weights.bold 
+    },
+    desc: { 
+      fontSize: typography.sizes.description, 
+      fontWeight: typography.weights.normal 
+    }
   },
+  
   colorSchemes: {
     light: {
       palette: {
         primary: {
-          main: '#fff',
+          main: colors.light.primary,
           text: {
-            primary: '#000',
-            secondary: '#252525',
-            third: '#CFB997'
+            primary: colors.light.text.primary,
+            secondary: colors.light.text.secondary,
+            third: colors.light.text.accent
           },
-          button: { bg: '#000', text: '#fff' }
+          button: { 
+            bg: colors.light.button.background, 
+            text: colors.light.button.text 
+          }
         }
       }
     },
     dark: {
       palette: {
         primary: {
-          main: '#333333',
+          main: colors.dark.background,
           text: {
-            primary: '#4e88ca',
-            secondary: '#f5f5f5',
-            third: '#b2b2b2'
+            primary: colors.dark.text.primary,
+            secondary: colors.dark.text.secondary,
+            third: colors.dark.text.accent
           },
-          button: { bg: '#c2bdb5', text: '#252525' }
+          button: { 
+            bg: colors.dark.button.background, 
+            text: colors.dark.button.text 
+          }
         }
       }
     }

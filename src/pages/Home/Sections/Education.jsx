@@ -2,16 +2,18 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 
 import { SETTING } from '~/settings'
-import { INFO } from '~/components/Infomation'
+import { PROFILE_CONFIG } from '~/config/profile.jsx'
 import TypographyTitle from '~/components/TypographyTitle'
 import BackgroundSection from '~/components/BackgroundSection'
 
 function Education() {
+  const { education } = PROFILE_CONFIG
+
   return (
     <BackgroundSection>
       <TypographyTitle text="EDUCATION" />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {INFO.education.map((e, i) => {
+        {education.map((e, i) => {
           return <EducationCard key={i} time={e.time} school={e.school} />
         })}
       </Box>

@@ -8,9 +8,9 @@ import MenuItem from '@mui/material/MenuItem'
 import { useNavigate } from 'react-router-dom'
 import { pages } from './ResponsiveAppBar'
 
-import Logo from '../Logo'
 import AppBarBtn from './AppBarBtn'
 import ToogleDarkMode from '../ToggleDarkMode'
+import SvgLogo from '../SvgLogo'
 
 function MobileDisplay() {
   const [anchorElNav, setAnchorElNav] = React.useState(null)
@@ -26,9 +26,14 @@ function MobileDisplay() {
   }
 
   return (
-    <>
-      <Logo />
-      <Box sx={{ display: 'flex', gap: 1 }}>
+    <Box sx={{ 
+      display: 'flex', 
+      justifyContent: 'space-between', 
+      alignItems: 'center',
+      width: '100%'
+    }}>
+      <SvgLogo />
+      <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
         <AppBarBtn color="primary.text.third" borderColor="primary.text.primary" ariaLabel="menu icon" ariaControls="menu-appbar" ariaHaspopup="true" onClick={handleOpenNavMenu}>
           <MenuIcon color="inherit" />
         </AppBarBtn>
@@ -61,7 +66,7 @@ function MobileDisplay() {
           </MenuItem>
         ))}
       </Menu>
-    </>
+    </Box>
   )
 }
 

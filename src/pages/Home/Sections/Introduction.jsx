@@ -1,12 +1,14 @@
 import Typography from '@mui/material/Typography'
 
 import { SETTING } from '~/settings'
-import { INFO } from '~/components/Infomation'
+import { PROFILE_CONFIG } from '~/config/profile.jsx'
 
 import TypographyTitle from '~/components/TypographyTitle'
 import BackgroundSection from '~/components/BackgroundSection'
 
 function Introduction() {
+  const { introduction } = PROFILE_CONFIG
+
   return (
     <BackgroundSection>
       <TypographyTitle text="INTRODUCE" />
@@ -19,7 +21,7 @@ function Introduction() {
           color: 'primary.text.secondary'
         }}
       >
-        {INFO.introduction}
+        {introduction}
       </Typography>
     </BackgroundSection>
   )

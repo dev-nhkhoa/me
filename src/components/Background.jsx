@@ -1,10 +1,13 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 
+import { BRANDING_CONFIG } from '~/config/branding'
 import Footer from './Footer'
 import ResponsiveAppBar from './ResponsiveAppBar/ResponsiveAppBar'
 
 function Background({ children }) {
+  const { dimensions, spacing } = BRANDING_CONFIG
+
   return (
     <Container
       maxWidth="100%"
@@ -16,7 +19,8 @@ function Background({ children }) {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'primary.main',
-        pb: 4
+        pb: 4,
+        pt: 10 // padding top để không bị che bởi fixed header
       }}
     >
       <Box sx={{ width: '100%' }}>
@@ -24,10 +28,13 @@ function Background({ children }) {
       </Box>
       <Box
         sx={{
-          width: { xs: '300px', md: '450px' },
+          width: { 
+            xs: dimensions.container.mobile, 
+            md: dimensions.container.desktop 
+          },
           display: 'flex',
           flexDirection: 'column',
-          gap: '28px',
+          gap: spacing.sectionGap,
           py: 2
         }}
       >

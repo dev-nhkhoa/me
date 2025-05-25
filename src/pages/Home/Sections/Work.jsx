@@ -5,15 +5,17 @@ import TypographyTitle from '~/components/TypographyTitle'
 import BackgroundSection from '~/components/BackgroundSection'
 
 import { SETTING } from '~/settings'
-import { INFO } from '~/components/Infomation'
+import { PROFILE_CONFIG } from '~/config/profile.jsx'
 
 function Work() {
+  const { workExperience } = PROFILE_CONFIG
+
   return (
     <BackgroundSection>
       <TypographyTitle text="WORK" />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {INFO.works.map((work, index) => {
-          return <WorkCard key={index} time={work.time} work={work.work} />
+        {workExperience.map((work, index) => {
+          return <WorkCard key={index} time={work.time} jobs={work.jobs} />
         })}
       </Box>
     </BackgroundSection>
@@ -23,7 +25,7 @@ function Work() {
 export default Work
 
 const WorkCard = (props) => {
-  const { time, work } = props
+  const { time, jobs } = props
   return (
     <Box
       sx={{
@@ -36,11 +38,11 @@ const WorkCard = (props) => {
         {time}:
       </Typography>
       <Box sx={{ width: '80%', display: 'flex', flexDirection: 'column', gap: 2 }}>
-        {work.map((w, index) => {
+        {jobs.map((job, index) => {
           return (
             <Box key={index} sx={{ pb: '6px', display: 'flex', justifyContent: 'right', flexDirection: 'column' }}>
               <Typography variant="desc" sx={{ textAlign: 'right', color: 'primary.text.primary', fontWeight: 'bold', textDecoration: 'underline', cursor: 'pointer' }}>
-                {w.role}:
+                {job.role}:
               </Typography>
               <Box sx={{ textAlign: 'justify', textIndent: SETTING.textIndent }}>
                 <Typography
@@ -49,7 +51,7 @@ const WorkCard = (props) => {
                     color: 'primary.text.secondary'
                   }}
                 >
-                  {w.description}
+                  {job.description}
                 </Typography>
               </Box>
             </Box>

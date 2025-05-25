@@ -2,12 +2,14 @@ import Box from '@mui/material/Box'
 import Card from '~/components/Card'
 
 import { SETTING } from '~/settings'
-import { INFO } from '~/components/Infomation'
+import { PROFILE_CONFIG } from '~/config/profile.jsx'
 
 import TypographyTitle from '~/components/TypographyTitle'
 import BackgroundSection from '~/components/BackgroundSection'
 
 function WhatILove() {
+  const { interests } = PROFILE_CONFIG
+
   return (
     <BackgroundSection>
       <TypographyTitle text="INTERESTED" />
@@ -20,8 +22,8 @@ function WhatILove() {
           pl: SETTING.paddingLeft
         }}
       >
-        {INFO.love.map((l, i) => {
-          return <Card key={i} name={l} color="primary.button.text" bgColor="primary.button.bg" />
+        {interests.map((interest, i) => {
+          return <Card key={i} name={interest} color="primary.button.text" bgColor="primary.button.bg" />
         })}
       </Box>
     </BackgroundSection>

@@ -1,12 +1,28 @@
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
+import Modal from '@mui/material/Modal'
+import IconButton from '@mui/material/IconButton'
+import CloseIcon from '@mui/icons-material/Close'
+import { useState } from 'react'
 
-import Avatar from '~/assets/images/avatar.jpg'
-import { INFO } from '~/components/Infomation'
+import { PROFILE_CONFIG } from '~/config/profile.jsx'
+import { BRANDING_CONFIG } from '~/config/branding.js'
 import { randomQuote } from '~/utils/randomQuote'
 
 function AboutMe() {
+  const { personalInfo, socialMedia, images } = PROFILE_CONFIG
+  const { dimensions, typography } = BRANDING_CONFIG
   const generateQuote = randomQuote()
+  const [openFullscreen, setOpenFullscreen] = useState(false)
+
+  const handleAvatarClick = () => {
+    setOpenFullscreen(true)
+  }
+
+  const handleCloseFullscreen = () => {
+    setOpenFullscreen(false)
+  }
+
   return (
     <>
       <Box
@@ -50,7 +66,7 @@ function AboutMe() {
           <Typography
             variant="title"
             sx={{
-              fontSize: '28px',
+              fontSize: typography.sizes.large,
               color: 'primary.text.primary',
               ':hover': {
                 textDecoration: 'underline'
@@ -67,7 +83,7 @@ function AboutMe() {
             alignItems: 'end'
           }}
         >
-          {/* Avater & role & social */}
+          {/* Avatar & role & social */}
           <Box sx={{ display: 'flex', gap: 2, justifyContent: 'start', alignItems: 'center' }}>
             {/* role & social */}
             <Box sx={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
@@ -76,13 +92,13 @@ function AboutMe() {
                   textAlign: { xs: 'right', sm: 'center' },
                   fontSize: { xs: '14px', sm: '18px' },
                   color: 'primary.text.third',
-                  fontWeight: '900'
+                  fontWeight: typography.weights.extraBold
                 }}
               >
-                {INFO.fullName}
+                {personalInfo.fullName}
               </Typography>
               <Typography variant="desc" sx={{ fontWeight: 'bold', textAlign: 'right', color: 'primary.text.third' }}>
-                {INFO.role}
+                {personalInfo.role}
               </Typography>
               <Box
                 sx={{
@@ -93,10 +109,17 @@ function AboutMe() {
                   color: 'primary.text.secondary'
                 }}
               >
-                {INFO.socials.map((s, i) => {
+                {socialMedia.map((social, i) => {
                   return (
-                    <Box sx={{ cursor: 'pointer', ':hover': { color: 'primary.text.third' } }} key={i} onClick={() => window.open(s.link)}>
-                      {s.element}
+                    <Box
+                      sx={{
+                        cursor: 'pointer',
+                        ':hover': { color: 'primary.text.third' }
+                      }}
+                      key={i}
+                      onClick={() => window.open(social.url)}
+                    >
+                      {social.icon}
                     </Box>
                   )
                 })}
@@ -104,25 +127,80 @@ function AboutMe() {
             </Box>
             <Box
               sx={{
-                width: '80px',
-                height: '80px',
+                width: dimensions.avatar.width,
+                height: dimensions.avatar.height,
                 backgroundColor: '#999',
-                borderRadius: '99999px'
+                borderRadius: dimensions.borderRadius.large,
+                cursor: 'pointer',
+                transition: 'transform 0.3s ease',
+                '&:hover': {
+                  transform: 'scale(1.1)'
+                }
               }}
+              onClick={handleAvatarClick}
             >
               <img
-                src={Avatar}
+                src={images.avatar}
+                alt="Avatar"
                 style={{
-                  objectFit: 'fill',
-                  width: '80px',
-                  height: '80px',
-                  borderRadius: '99999px'
+                  objectFit: 'cover',
+                  width: dimensions.avatar.width,
+                  height: dimensions.avatar.height,
+                  borderRadius: dimensions.borderRadius.large
                 }}
               />
             </Box>
           </Box>
         </Box>
       </Box>
+
+      {/* Fullscreen Modal */}
+      <Modal
+        open={openFullscreen}
+        onClose={handleCloseFullscreen}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          p: 2
+        }}
+      >
+        <Box
+          sx={{
+            position: 'relative',
+            maxWidth: '90vw',
+            maxHeight: '90vh',
+            outline: 'none'
+          }}
+        >
+          <IconButton
+            onClick={handleCloseFullscreen}
+            sx={{
+              position: 'absolute',
+              top: 10,
+              right: 10,
+              backgroundColor: 'rgba(0, 0, 0, 0.5)',
+              color: 'white',
+              zIndex: 1,
+              '&:hover': {
+                backgroundColor: 'rgba(0, 0, 0, 0.7)'
+              }
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+          <img
+            src={images.avatar}
+            alt="Avatar fullscreen"
+            style={{
+              maxWidth: '100%',
+              maxHeight: '90vh',
+              objectFit: 'contain',
+              borderRadius: '16px'
+            }}
+          />
+        </Box>
+      </Modal>
     </>
   )
 }
