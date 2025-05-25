@@ -60,8 +60,6 @@ ErrorDocument 500 /500.html
     Deny from all
 </FilesMatch>
 
-# SEO-friendly redirects for common variations
+# SEO-friendly redirects for brand variations
 RewriteRule ^truong-nguyen-anh-khoa/?$ / [R=301,L]
 RewriteRule ^dev-nhkhoa/?$ / [R=301,L]
-RewriteRule ^business-analyst/?$ /#about [R=301,L]
-RewriteRule ^indie-developer/?$ /#projects [R=301,L]

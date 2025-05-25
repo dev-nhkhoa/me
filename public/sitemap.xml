@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage - Main Landing Page -->
   <url>
     <loc>https://nhkhoa.dev/</loc>
     <lastmod>2025-05-25</lastmod>
@@ -14,59 +14,16 @@
       <image:title>nhkhoa - Business Analyst and Indie Developer</image:title>
       <image:caption>Portfolio logo của TRUONG NGUYEN ANH KHOA</image:caption>
     </image:image>
-  </url>
-
-  <!-- About Section -->
-  <url>
-    <loc>https://nhkhoa.dev/#about</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Skills Section -->
-  <url>
-    <loc>https://nhkhoa.dev/#skills</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Projects Section -->
-  <url>
-    <loc>https://nhkhoa.dev/#projects</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://nhkhoa.dev/src/assets/images/avatar.jpg</image:loc>
+      <image:title>TRUONG NGUYEN ANH KHOA Profile Photo</image:title>
+      <image:caption>Ảnh đại diện của nhkhoa - Business Analyst và Indie Developer</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://nhkhoa.dev/src/assets/images/trustifycsr/trustifycsr-preview.png</image:loc>
       <image:title>TrustifyCSR Project Preview</image:title>
       <image:caption>Dự án TrustifyCSR được phát triển bởi nhkhoa</image:caption>
     </image:image>
-  </url>
-
-  <!-- Work Experience Section -->
-  <url>
-    <loc>https://nhkhoa.dev/#work</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Education Section -->
-  <url>
-    <loc>https://nhkhoa.dev/#education</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Contact Section -->
-  <url>
-    <loc>https://nhkhoa.dev/#contact</loc>
-    <lastmod>2025-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
 </urlset>
