@@ -122,20 +122,20 @@ export const PROFILE_CONFIG = {
       liveUrl: 'https://trustifycsr.tech',
       githubUrl: '',
       detailedDescription: 'TrustifyCSR is a revolutionary platform designed to enhance transparency and trust in charitable donations. By leveraging Blockchain technology, it connects donors directly with charities, ensuring that every contribution is tracked and verified. The platform aims to eliminate fraud and build confidence in the charitable sector. Project for RA KHOI 2025.',
-      image: '/src/assets/images/trustifycsr/trustifycsr-preview.png', // Hình ảnh chính
+      image: '/assets/images/trustifycsr/trustifycsr-preview.png', // Hình ảnh chính
       images: [ // Gallery ảnh (tùy chọn)
         {
-          src: '/src/assets/images/trustifycsr/memories-1.png',
+          src: '/assets/images/trustifycsr/memories-1.png',
           alt: 'TrustifyCSR memories',
           caption: 'Memories of the project development'
         },
         {
-          src: '/src/assets/images/trustifycsr/memories-2.png',
+          src: '/assets/images/trustifycsr/memories-2.png',
           alt: 'TrustifyCSR memories',
           caption: 'Memories of the project development'
         },
         {
-          src: '/src/assets/images/trustifycsr/memories-3.png',
+          src: '/assets/images/trustifycsr/memories-3.png',
           alt: 'TrustifyCSR memories',
           caption: 'Memories of the project development'
         }
@@ -180,7 +180,7 @@ export const PROFILE_CONFIG = {
       githubUrl: 'https://github.com/dev-nhkhoa/calendarVLU2.0', // Thêm link GitHub nếu có
       // Thông tin chi tiết cho trang detail
       detailedDescription: 'CalenVLU is a comprehensive scheduling application designed specifically for Van Lang University students. It seamlessly integrates with Google Calendar to provide students with an intuitive way to manage their academic schedules, including lectures, exams, and important academic events.',
-      image: '/src/assets/images/calendarvlu.png', // Hình ảnh chính của project
+      image: '/assets/images/calendarvlu.png', // Hình ảnh chính của project
       images: [ // Gallery ảnh cho project (tùy chọn)
         
       ],
@@ -205,7 +205,7 @@ export const PROFILE_CONFIG = {
       liveUrl: 'https://nhkhoa.live',
       githubUrl: 'https://github.com/dev-nhkhoa/me',
       detailedDescription: 'A clean, minimalist personal portfolio website showcasing my work, skills, and journey as a developer. Built with modern web technologies and focused on performance and user experience.',
-      image: '/src/assets/images/minimal-web-home.png', // Hình ảnh chính
+      image: '/assets/images/minimal-web-home.png', // Hình ảnh chính
       images: [ // Gallery ảnh (tùy chọn)
         
       ],
@@ -247,8 +247,8 @@ export const PROFILE_CONFIG = {
 
   // Hình ảnh - Images
   images: {
-    avatar: '/src/assets/images/avatar.jpg',
-    logo: '/src/assets/images/nhkhoa-logo-nobg.png'
+    avatar: '/assets/images/avatar.jpg',
+    logo: '/assets/images/nhkhoa-logo-nobg.png'
   },
 
   // Thông tin copyright - Copyright

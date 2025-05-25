@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/src/assets/images/nhkhoa-logo-nobg.png",
+      "src": "/assets/images/nhkhoa-logo-nobg.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/src/assets/images/nhkhoa-logo-nobg.png",
+      "src": "/assets/images/nhkhoa-logo-nobg.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -31,14 +31,14 @@
       "short_name": "About",
       "description": "Thông tin về TRUONG NGUYEN ANH KHOA",
       "url": "/#about",
-      "icons": [{"src": "/src/assets/images/nhkhoa-logo-nobg.png", "sizes": "96x96"}]
+      "icons": [{"src": "/assets/images/nhkhoa-logo-nobg.png", "sizes": "96x96"}]
     },
     {
       "name": "Dự án",
       "short_name": "Projects",
       "description": "Các dự án của nhkhoa",
       "url": "/#projects",
-      "icons": [{"src": "/src/assets/images/nhkhoa-logo-nobg.png", "sizes": "96x96"}]
+      "icons": [{"src": "/assets/images/nhkhoa-logo-nobg.png", "sizes": "96x96"}]
     }
   ]
 }

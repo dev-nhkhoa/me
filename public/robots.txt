@@ -15,7 +15,7 @@ Disallow: /package.json
 Disallow: /jsconfig.json
 
 # Allow specific important files
-Allow: /src/assets/images/
+Allow: /assets/images/
 
 # Crawl delay for respectful crawling
 Crawl-delay: 1

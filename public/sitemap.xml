@@ -10,17 +10,17 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://nhkhoa.dev/src/assets/images/nhkhoa-logo-nobg.png</image:loc>
+      <image:loc>https://nhkhoa.dev/assets/images/nhkhoa-logo-nobg.png</image:loc>
       <image:title>nhkhoa - Business Analyst and Indie Developer</image:title>
       <image:caption>Portfolio logo của TRUONG NGUYEN ANH KHOA</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nhkhoa.dev/src/assets/images/avatar.jpg</image:loc>
+      <image:loc>https://nhkhoa.dev/assets/images/avatar.jpg</image:loc>
       <image:title>TRUONG NGUYEN ANH KHOA Profile Photo</image:title>
       <image:caption>Ảnh đại diện của nhkhoa - Business Analyst và Indie Developer</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://nhkhoa.dev/src/assets/images/trustifycsr/trustifycsr-preview.png</image:loc>
+      <image:loc>https://nhkhoa.dev/assets/images/trustifycsr/trustifycsr-preview.png</image:loc>
       <image:title>TrustifyCSR Project Preview</image:title>
       <image:caption>Dự án TrustifyCSR được phát triển bởi nhkhoa</image:caption>
     </image:image>
