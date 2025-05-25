@@ -1,0 +1,44 @@
+{
+  "name": "TRUONG NGUYEN ANH KHOA | nhkhoa Portfolio",
+  "short_name": "nhkhoa",
+  "description": "Portfolio của TRUONG NGUYEN ANH KHOA (nhkhoa) - Business Analyst và Indie Developer chuyên nghiệp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/assets/images/nhkhoa-logo-nobg.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/src/assets/images/nhkhoa-logo-nobg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "developer-tools"],
+  "lang": "vi-VN",
+  "dir": "ltr",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Về tôi",
+      "short_name": "About",
+      "description": "Thông tin về TRUONG NGUYEN ANH KHOA",
+      "url": "/#about",
+      "icons": [{"src": "/src/assets/images/nhkhoa-logo-nobg.png", "sizes": "96x96"}]
+    },
+    {
+      "name": "Dự án",
+      "short_name": "Projects",
+      "description": "Các dự án của nhkhoa",
+      "url": "/#projects",
+      "icons": [{"src": "/src/assets/images/nhkhoa-logo-nobg.png", "sizes": "96x96"}]
+    }
+  ]
+}
